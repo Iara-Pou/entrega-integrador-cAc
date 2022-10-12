@@ -10,6 +10,24 @@ h3, .porcentaje{
     color: gray;
     font-size: 0.9rem;
 }
+
 input, select{
-    margin: 2% auto;
+    margin: 1% auto;
 }
+#cartel{
+    width: 98%;
+    margin: 0 auto;
+}
+
+form button{
+    margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+    form{
+        padding: 0 10%;
+    }
+    form button{
+        margin-bottom: 0%;
+    }
+ }
