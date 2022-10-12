@@ -12,6 +12,13 @@ footer{
     padding: 1.5%;
     height: 500px;
 }
+#comprarTickets{
+    color:rgb(0, 185, 0);
+}
+#comprarTickets:hover{
+    color:rgb(3, 216, 3);
+
+}
 
 p>a{
     text-decoration-style: dotted;
