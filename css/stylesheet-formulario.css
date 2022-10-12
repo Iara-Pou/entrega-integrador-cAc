@@ -10,3 +10,9 @@ h3, .porcentaje{
     color: gray;
     font-size: 0.9rem;
 }
+input, select{
+    margin: 2% auto;
+}
+form{
+    padding: 2% 20%;
+}
