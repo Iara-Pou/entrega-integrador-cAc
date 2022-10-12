@@ -51,7 +51,7 @@
     <main>
         <div class="container">
             <section>
-                <div class="row d-flex gap-2 my-4">
+                <div class="row d-flex gap-2 my-4 justify-content-center">
                     <div class="col-md-3 col-sm-12 py-4 border-primary recuadro">
                         <h3>Estudiantes</h3>
                         <p>Tienen un descuento</p>
@@ -80,36 +80,40 @@
                     </div>
                 </header>
                 <form action="">
-                    <div class="row">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
-                    </div>
-                    <div class="row">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                    <div class="container py-3">
+                        <div class="row">
+                            <input type="email" class="form-control col" id="exampleInputEmail1" placeholder="Nombre">
+                            <input type="email" class="form-control col" id="exampleInputEmail1" placeholder="Apellido">
                         </div>
-                        <div class="form-group col">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <select class="form-control">
-                                <option>Default select</option>
-                            </select>
+                        <div class="row">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="alert alert-primary my-4">
-                            <p>Total a pagar:</p>
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="exampleFormControlInput1">Cantidad</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="cantidad">
+                            </div>
+                            <div class="form-group col">
+                                <label for="exampleFormControlInput1">Categoría</label>
+                                <select class="form-control">
+                                    <option>Estudiante</option>
+                                    <option>Trainee</option>
+                                    <option>Juniors</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
+                        <div class="row">
+                            <div class="alert alert-primary my-4">
+                                <p>Total a pagar:</p>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col"> <button type="button" class="btn btn-success w-100">Borrar</button>
                             </div>
                             <div class="col"> <button type="button" class="btn btn-success w-100">Resumen</button>
                             </div>
+                        </div>
                     </div>
                 </form>
             </section>
