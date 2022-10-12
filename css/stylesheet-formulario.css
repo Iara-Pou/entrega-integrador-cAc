@@ -5,6 +5,11 @@ h3, .porcentaje{
 .recuadro{
     text-align: center;
     border: 2px solid black; 
+    border-radius: 5%;
+}
+.recuadro:hover{
+    transform: scale(1.02);
+    background-color:rgb(250, 250, 250);
 }
 .aclaracion{
     color: gray;
@@ -31,3 +36,9 @@ form button{
         margin-bottom: 0%;
     }
  }
+
+ .recuadro {
+
+  
+  
+  }
