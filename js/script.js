@@ -7,7 +7,7 @@ $botonCalcular.onclick= function(){
     let $precio = document.querySelector("#precio"); 
     const $nombre = document.querySelector("#nombre").value;
 
-    if (cantidadEntradas>0 && categoria!== ""){
+    if (cantidadEntradas>0 && categoria !== ""){
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
         $titulo.textContent = `¡Gracias por participar, ${$nombre}!`
