@@ -187,24 +187,20 @@
                         quieres hablar!
                     </p>
                 </div>
-                <div class="row d-flex container" id="formulario">
+                <div class="container" id="formulario">
                     <form>
-                        <div class="d-flex flex-wrap mb-3">
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <input type="text" name="nombre" placeholder="Nombre" class="form-control">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <input type="text" name="apellido" placeholder="Apellido" class="form-control">
-                            </div>
+                        <div class="row elemento-a-ocultar mb-3">
+                            <div class="col-md-6 col-sm-12" id="div-nombre"><input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre"></div>
+                            <div class="col-md-6 col-sm-12"  id="div-apellido"><input type="text" name="apellido" class="form-control" placeholder="Apellido"></div>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="row elemento-a-ocultar">
                             <textarea name="temaCharla" cols="30" rows="5" placeholder="Sobre qué quieres hablar?"
-                                class="form-control form-control-lg"></textarea>
+                                class="col-12 form-control form-control-lg"></textarea>
                             <small id="emailHelp" class="form-text text-muted">Recuerda incluir un título para tu
                                 charla.</small>
                         </div>
-                        <div class="col-lg-12">
-                            <button type="submit" class="btn btn-success w-100 mt-3" id="botonEnvio">Enviar</button>
+                        <div class="row elemento-a-ocultar">
+                            <button type="submit" class="btn btn-success mt-3 col-lg-12" id="botonEnvio">Enviar</button>
                         </div>
                     </form>
                 </div>
