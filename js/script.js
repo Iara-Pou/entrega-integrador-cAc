@@ -5,4 +5,5 @@ $botonCalcular.onclick= function(){
     const categoria = document.querySelector("#categoria");
     let $precio = document.querySelector("#precio"); 
 
+    return false;
 }
