@@ -79,27 +79,23 @@
                         <h1 class="fw-bold">VALOR DE TICKET $200</h1>
                     </div>
                 </header>
-                <form action="">
-                    <div class="container p2-3 mb-5">
+                <form >
+                    <div class=" mb-5">
                         <div class="row elemento-a-ocultar">
-                            <div class="col-md-6 col-sm-12"><input type="email" class="form-control"
-                                    id="nombre" placeholder="Nombre"></div>
-                            <div class="col-md-6 col-sm-12"><input type="email" class="form-control"
-                                    id="exampleInputEmail1" placeholder="Apellido"></div>
+                            <div class="col-md-6 col-sm-12"><input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre"></div>
+                            <div class="col-md-6 col-sm-12"><input type="text" name="apellido" class="form-control" placeholder="Apellido"></div>
                         </div>
                         <div class="row elemento-a-ocultar">
-                            <div class="col-12"><input type="email" class="form-control" id="exampleInputEmail1"
-                                    placeholder="Correo"></div>
+                            <div class="col-12"><input type="email" name="mail" class="form-control" placeholder="Correo"></div>
                         </div>
                         <div class="row elemento-a-ocultar">
                             <div class="form-group col-md-6 col-sm-12">
                                 <label for="cantidad">Cantidad</label>
-                                <input type="email" class="form-control" id="cantidad"
-                                    placeholder="Cantidad">
+                                <input type="number" name="cantidad" class="form-control" id="cantidad" placeholder="Cantidad">
                             </div>
                             <div class="form-group col-md-6 col-sm-12">
                                 <label for="categoria">Categoría</label>
-                                <select class="form-control" id="categoria">
+                                <select name="categoria-entrada" class="form-control" id="categoria">
                                     <option value="">Seleccionar</option>
                                     <option>Estudiante</option>
                                     <option>Trainee</option>
