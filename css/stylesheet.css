@@ -13,6 +13,7 @@ footer {
     height: 500px;
 }
 
+
 #comprarTickets {
     color: rgb(0, 185, 0);
 }
@@ -37,10 +38,39 @@ p>a {
 }
 
 header img {
-    filter: brightness(60%);
+    filter: brightness(35%);
 }
 
 .foto-carousel {
     height: 500px;
     background-size: cover !important;
+}
+
+#div-nombre,
+#div-apellido {
+    padding: 2% 0%;
+}
+
+.oculto {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    #div-nombre,
+    #div-apellido {
+        padding: 1% 0% 0%;
+    }
+
+    #div-nombre {
+        padding-left: 0%;
+        padding-right: 1%;
+
+    }
+
+    #div-apellido {
+        padding-right: 0%;
+        padding-left: 1%;
+
+    }
 }

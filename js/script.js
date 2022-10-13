@@ -1,27 +1,17 @@
-const $botonCalcular = document.querySelector("#boton-calcular");
+const $botonEnviar = document.querySelector("#botonEnvio");
 
-$botonCalcular.onclick= function(){
-    const cantidadEntradas = document.querySelector("#cantidad").value;
-    const categoria = document.querySelector("#categoria").value;
-    let $titulo = document.querySelector("h1");
-    let $precio = document.querySelector("#precio"); 
+$botonEnviar.onclick= function(){
     const $nombre = document.querySelector("#nombre").value;
+    let $mensaje = document.querySelector("#mensaje"); 
+    //seleccionaría el parrafo
 
-    if (cantidadEntradas>0 && categoria !== "" && $nombre !== ""){
-        let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
-        $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
-        $titulo.textContent = `¡Gracias por participar, ${$nombre}!`
+        if($nombre.trim() !== ""){
+            $mensaje.textContent = `¡Gracias por participar, ${$nombre}! En brevedad nos contactaremos.`
 
-        let $elementosQueOcultar = document.querySelectorAll(".elemento-a-ocultar")
-        $elementosQueOcultar.forEach(row => row.classList.toggle('oculto'));
-        
-    } else if (cantidadEntradas<=0) {
-        alert("¡Debes ingresar 1 o más entradas!")
-    } else if (categoria===""){
-        alert("¡No te olvides de seleccionar una categoría!")
-    } else {
-        alert("Por favor, ingresá todos los datos!")
-    }
+            let $elementosQueOcultar = document.querySelectorAll(".elemento-a-ocultar")
+            $elementosQueOcultar.forEach(row => row.classList.toggle('oculto'));
+        }
+
 
     return false;
 }
