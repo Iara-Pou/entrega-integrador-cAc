@@ -8,6 +8,9 @@ $botonCalcular.onclick= function(){
     if (cantidadEntradas>0 && categoria!== ""){
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
+        let $elementosQueOcultar = document.querySelectorAll(".elemento-a-ocultar")
+        $elementosQueOcultar.forEach(row => row.classList.toggle('oculto'));
+
     } else if (cantidadEntradas<=0) {
         alert("¡Debes ingresar 1 o más entradas!")
     } else {

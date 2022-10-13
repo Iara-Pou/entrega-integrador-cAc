@@ -34,6 +34,10 @@ form button {
     margin-bottom: 2%;
 }
 
+.oculto{
+    display: none;
+}
+
 @media (min-width: 768px) {
     form {
         padding: 0 10%;
