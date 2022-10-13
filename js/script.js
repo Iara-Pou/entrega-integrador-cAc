@@ -3,11 +3,15 @@ const $botonCalcular = document.querySelector("#boton-calcular");
 $botonCalcular.onclick= function(){
     const cantidadEntradas = document.querySelector("#cantidad").value;
     const categoria = document.querySelector("#categoria").value;
+    let $titulo = document.querySelector("h1");
     let $precio = document.querySelector("#precio"); 
+    const $nombre = document.querySelector("#nombre");
 
     if (cantidadEntradas>0 && categoria!== ""){
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
+        $titulo.textContent = `¡Gracias por participar, ${nombre}!`
+
         let $elementosQueOcultar = document.querySelectorAll(".elemento-a-ocultar")
         $elementosQueOcultar.forEach(row => row.classList.toggle('oculto'));
 
