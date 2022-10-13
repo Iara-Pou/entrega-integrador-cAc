@@ -46,23 +46,31 @@ header img {
     background-size: cover !important;
 }
 
-#div-nombre, #div-apellido{
-    padding: 2% 0%;}
+#div-nombre,
+#div-apellido {
+    padding: 2% 0%;
+}
+
+.oculto {
+    display: none;
+}
 
 @media (min-width: 768px) {
-    #div-nombre, #div-apellido{
-    padding: 1% 0% 0%;  
+
+    #div-nombre,
+    #div-apellido {
+        padding: 1% 0% 0%;
     }
-    
-    #div-nombre{
+
+    #div-nombre {
         padding-left: 0%;
         padding-right: 1%;
 
     }
-    #div-apellido{
+
+    #div-apellido {
         padding-right: 0%;
         padding-left: 1%;
 
     }
 }
-
