@@ -19,8 +19,5 @@ function calcularPorcentajeDescuento(porcentaje) {
 function calcularPrecioEntradas(cantidad, descuento) {
     return (PRECIO_INICIAL - descuento) * cantidad;
 }
-function onlyLetters(str) {
-    return /^[a-zA-Z]+$/.test(str);
-  }
 
 const PRECIO_INICIAL = 200
