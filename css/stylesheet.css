@@ -1,19 +1,28 @@
-*{
+* {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-footer{
+footer {
     background-color: rgb(16, 72, 105);
 }
 
-#textoFechaYLugar{
+#textoFechaYLugar {
     background-color: rgb(75, 75, 75);
     color: white;
     padding: 1.5%;
     height: 500px;
 }
 
-p>a{
+#comprarTickets {
+    color: rgb(0, 185, 0);
+}
+
+#comprarTickets:hover {
+    color: rgb(3, 216, 3);
+
+}
+
+p>a {
     text-decoration-style: dotted;
 }
 
@@ -27,11 +36,11 @@ p>a{
     text-align: right;
 }
 
-header img{
+header img {
     filter: brightness(60%);
 }
 
-.foto-carousel{
-    height:500px; 
+.foto-carousel {
+    height: 500px;
     background-size: cover !important;
 }
