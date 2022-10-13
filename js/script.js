@@ -7,18 +7,20 @@ $botonCalcular.onclick= function(){
     let $precio = document.querySelector("#precio"); 
     const $nombre = document.querySelector("#nombre").value;
 
-    if (cantidadEntradas>0 && categoria !== ""){
+    if (cantidadEntradas>0 && categoria !== "" && $nombre !== ""){
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
         $titulo.textContent = `¡Gracias por participar, ${$nombre}!`
 
         let $elementosQueOcultar = document.querySelectorAll(".elemento-a-ocultar")
         $elementosQueOcultar.forEach(row => row.classList.toggle('oculto'));
-
+        
     } else if (cantidadEntradas<=0) {
         alert("¡Debes ingresar 1 o más entradas!")
-    } else {
+    } else if (categoria===""){
         alert("¡No te olvides de seleccionar una categoría!")
+    } else {
+        alert("Por favor, ingresá todos los datos!")
     }
 
     return false;
