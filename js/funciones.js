@@ -10,7 +10,6 @@ function devolverPorcentajeSegunCategoria(categoria) {
         case "Junior":
             porcentaje = 15;
             break;
-            //validación en switch o en script origen?
     }
     return porcentaje;
 }
