@@ -114,8 +114,20 @@
                 <div class="row oculto" id="mensaje-final">
                     <div class="alert alert-primary my-4 col-12" id="cartel">
                         <p>Total a pagar: <em id="precio"></em></p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12"> 
+                                <button type="button" class="btn btn-warning w-100" id="boton-cancelar-compra">Cancelar</button></div>
+                            <div class="col-md-6 col-sm-12"> <button type="button" 
+                                class="btn btn-success w-100" id="boton-confirmar-compra">Comprar</button></div>
+                        </div> 
                     </div>
                 </div>
+              <div class="row oculto" id="confirma-compra">
+                <div class="alert alert-success my-4 col-12" id="cartel-confirmacion">
+                    <p>Tu compra fue efectuada correctamente.</p>
+                    <p>¡Muchas gracias!</p>
+              </div>
+          </div>
             </section>
         </div>
     </main>
