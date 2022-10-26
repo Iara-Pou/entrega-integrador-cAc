@@ -55,6 +55,10 @@ header img {
     display: none;
 }
 
+button{
+    height: 3.5em;
+}
+
 @media (min-width: 768px) {
 
     #div-nombre,
