@@ -79,16 +79,16 @@
                         <h1 class="fw-bold">VALOR DE TICKET $200</h1>
                     </div>
                 </header>
-                <form >
+                <form>
                     <div class=" mb-5">
-                        <div class="row elemento-a-ocultar">
+                        <div class="row">
                             <div class="col-md-6 col-sm-12"><input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre"></div>
                             <div class="col-md-6 col-sm-12"><input type="text" name="apellido" class="form-control" placeholder="Apellido"></div>
                         </div>
-                        <div class="row elemento-a-ocultar">
+                        <div class="row">
                             <div class="col-12"><input type="email" name="mail" class="form-control" placeholder="Correo"></div>
                         </div>
-                        <div class="row elemento-a-ocultar">
+                        <div class="row">
                             <div class="form-group col-md-6 col-sm-12">
                                 <label for="cantidad">Cantidad</label>
                                 <input type="number" name="cantidad" class="form-control" id="cantidad" placeholder="Cantidad">
@@ -103,19 +103,31 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="alert alert-primary my-4 col-12" id="cartel">
-                                <p>Total a pagar: <em id="precio"></em></p>
-                            </div>
-                        </div>
-                        <div class="row elemento-a-ocultar">
+                        <div class="row py-4">
                             <div class="col-md-6 col-sm-12"> <button type="reset"
-                                    class="btn btn-success w-100 py-2">Borrar</button></div>
+                                    class="btn btn-success w-100">Borrar</button></div>
                             <div class="col-md-6 col-sm-12"> <button type="button" 
-                                    class="btn btn-success w-100 py-2" id="boton-calcular">Resumen</button></div>
+                                    class="btn btn-success w-100" id="boton-calcular">Resumen</button></div>
                         </div>
                     </div>
                 </form>
+                <div class="row oculto" id="mensaje-final">
+                    <div class="alert alert-primary my-4 col-12" id="cartel">
+                        <p>Total a pagar: <em id="precio"></em></p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12"> 
+                                <button type="button" class="btn btn-warning w-100" id="boton-cancelar-compra">Cancelar</button></div>
+                            <div class="col-md-6 col-sm-12"> <button type="button" 
+                                class="btn btn-success w-100" id="boton-confirmar-compra">Comprar</button></div>
+                        </div> 
+                    </div>
+                </div>
+              <div class="row oculto" id="confirma-compra">
+                <div class="alert alert-success my-4 col-12" id="cartel-confirmacion">
+                    <p>Tu compra fue efectuada correctamente.</p>
+                    <p>¡Muchas gracias!</p>
+              </div>
+          </div>
             </section>
         </div>
     </main>
