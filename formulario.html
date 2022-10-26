@@ -81,14 +81,14 @@
                 </header>
                 <form >
                     <div class=" mb-5">
-                        <div class="row elemento-a-ocultar">
+                        <div class="row">
                             <div class="col-md-6 col-sm-12"><input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre"></div>
                             <div class="col-md-6 col-sm-12"><input type="text" name="apellido" class="form-control" placeholder="Apellido"></div>
                         </div>
-                        <div class="row elemento-a-ocultar">
+                        <div class="row">
                             <div class="col-12"><input type="email" name="mail" class="form-control" placeholder="Correo"></div>
                         </div>
-                        <div class="row elemento-a-ocultar">
+                        <div class="row">
                             <div class="form-group col-md-6 col-sm-12">
                                 <label for="cantidad">Cantidad</label>
                                 <input type="number" name="cantidad" class="form-control" id="cantidad" placeholder="Cantidad">
@@ -104,11 +104,6 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="alert alert-primary my-4 col-12" id="cartel">
-                                <p>Total a pagar: <em id="precio"></em></p>
-                            </div>
-                        </div>
-                        <div class="row elemento-a-ocultar">
                             <div class="col-md-6 col-sm-12"> <button type="reset"
                                     class="btn btn-success w-100 py-2">Borrar</button></div>
                             <div class="col-md-6 col-sm-12"> <button type="button" 
@@ -116,6 +111,11 @@
                         </div>
                     </div>
                 </form>
+                <div class="row oculto" id="mensaje-final">
+                    <div class="alert alert-primary my-4 col-12" id="cartel">
+                        <p>Total a pagar: <em id="precio"></em></p>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
