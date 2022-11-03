@@ -16,19 +16,21 @@ $botonEnviar.onclick= function(){
     return false;
 }
 
-const $botonGoUp = document.querySelector("#go-top-container");
-$botonGoUp.onclick = scrollearArriba;
-
 function scrollearArriba (){
-document.documentElement.scrollTop = 0;
-document.body.scrollTop = 0;
-}
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    }
+
+const $botonGoTop = document.querySelector("#go-top-container");
+$botonGoTop.onclick = scrollearArriba;
+
+
 
 window.addEventListener('scroll', () =>{
     if(window.scrollY < 130){
-        $botonGoUp.classList.add("oculto");
+        $botonGoTop.classList.add("oculto");
     } else {
-        $botonGoUp.classList.remove("oculto");
+        $botonGoTop.classList.remove("oculto");
     }
 }
 );
