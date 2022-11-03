@@ -51,6 +51,7 @@ header img {
     padding: 2% 0%;
 }
 
+/* cAc */
 .oculto {
     display: none;
 }
@@ -76,6 +77,9 @@ header img {
     background-color: rgb(255, 255, 255);
     transform: scale(1.1);
 }
+
+/* cAc */
+
 
 @media (min-width: 768px) {
 

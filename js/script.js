@@ -16,6 +16,7 @@ $botonEnviar.onclick= function(){
     return false;
 }
 
+//cAc
 function scrollearArriba (){
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
@@ -23,8 +24,6 @@ function scrollearArriba (){
 
 const $botonGoTop = document.querySelector("#go-top-container");
 $botonGoTop.onclick = scrollearArriba;
-
-
 
 window.addEventListener('scroll', () =>{
     if(window.scrollY < 130){
@@ -34,3 +33,4 @@ window.addEventListener('scroll', () =>{
     }
 }
 );
+//cAc
