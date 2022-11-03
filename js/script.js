@@ -15,3 +15,10 @@ $botonEnviar.onclick= function(){
 
     return false;
 }
+
+const $botonGoUp = document.querySelector("#go-top-button");
+$botonGoUp.onclick = scrollearArriba;
+
+function scrollearArriba (){
+document.documentElement.scrollTop = 0;
+}
