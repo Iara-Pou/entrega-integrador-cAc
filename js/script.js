@@ -16,10 +16,19 @@ $botonEnviar.onclick= function(){
     return false;
 }
 
-const $botonGoUp = document.querySelector("#go-top-button");
+const $botonGoUp = document.querySelector("#go-top-container");
 $botonGoUp.onclick = scrollearArriba;
 
 function scrollearArriba (){
 document.documentElement.scrollTop = 0;
 document.body.scrollTop = 0;
 }
+
+window.addEventListener('scroll', () =>{
+    if(window.scrollY < 130){
+        $botonGoUp.classList.add("oculto");
+    } else {
+        $botonGoUp.classList.remove("oculto");
+    }
+}
+);
