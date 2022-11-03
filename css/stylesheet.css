@@ -55,6 +55,11 @@ header img {
     display: none;
 }
 
+#go-top-container {
+    position: fixed;
+    bottom: 7%;
+    right: 5%;
+}
 
 
 @media (min-width: 768px) {
