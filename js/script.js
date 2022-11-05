@@ -24,18 +24,14 @@ function scrollearArriba (){
 const $botonGoTop = document.querySelector("#go-top-container");
 $botonGoTop.onclick = scrollearArriba;
 
-<<<<<<< Updated upstream
-
-=======
 const altoDePantalla = window.innerHeight;
->>>>>>> Stashed changes
 
 window.addEventListener('scroll', () =>{
     if(window.scrollY < altoDePantalla/5.5){
         $botonGoTop.classList.add("oculto");
     } else {
         $botonGoTop.classList.remove("oculto");
-        $botonGoTop.classList.add("fade-in");
+        $botonGoTop.classList.toggle("fade-in");
     }
 }
 );
