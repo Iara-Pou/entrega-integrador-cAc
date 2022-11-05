@@ -77,6 +77,21 @@ header img {
     transform: scale(1.1);
 }
 
+<<<<<<< Updated upstream
+=======
+.fade-in{
+animation-name: fade-in;
+animation-duration: 1s;
+}
+
+@keyframes fade-in{
+0%{ opacity: 0%;}
+100%{ opacity: 100%;}
+}
+/* cAc */
+
+
+>>>>>>> Stashed changes
 @media (min-width: 768px) {
 
     #div-nombre,
