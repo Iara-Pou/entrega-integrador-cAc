@@ -1,0 +1,22 @@
+{
+  "name": "entrega-integrador-cac",
+  "version": "1.0.0",
+  "description": "armado de página web propuesta por el curso de programación full-stack, de codo a codo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iara-Pou/entrega-integrador-cAc.git"
+  },
+  "author": "Iara Pou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iara-Pou/entrega-integrador-cAc/issues"
+  },
+  "homepage": "https://github.com/Iara-Pou/entrega-integrador-cAc#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
