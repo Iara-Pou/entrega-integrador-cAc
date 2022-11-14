@@ -24,9 +24,10 @@ const $botonGoTop = document.querySelector("#go-top-container");
 $botonGoTop.onclick = scrollearArriba;
 
 const altoDePantalla = window.innerHeight;
+const ALTURA_MOSTRAR_BOTON = altoDePantalla/5.5
 
 window.addEventListener('scroll', () =>{
-    if(window.scrollY < altoDePantalla/5.5){
+    if(window.scrollY < ALTURA_MOSTRAR_BOTON){
         $botonGoTop.classList.add("oculto");
         $botonGoTop.classList.remove("fade-in")
     } else {
