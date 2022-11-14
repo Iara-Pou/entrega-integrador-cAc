@@ -77,19 +77,6 @@ header img {
     display: none;
 }
 
-.fade-out {
-    animation: fade-out 1s;
-  }
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 100%;
-    }
-    100% {
-      opacity: 0%;
-    }
-  }
-
 .fade-in{
 animation-name: fade-in;
 animation-duration: 1s;
