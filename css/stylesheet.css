@@ -88,8 +88,7 @@ header img {
   }
 
 .fade-in{
-animation-name: fade-in;
-animation-duration: 1s;
+animation: fade-in 1s;
 }
 
 @keyframes fade-in{
