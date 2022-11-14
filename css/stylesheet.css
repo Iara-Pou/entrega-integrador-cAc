@@ -51,10 +51,6 @@ header img {
     padding: 2% 0%;
 }
 
-.oculto {
-    display: none;
-}
-
 #go-top-container {
     position: fixed;
     bottom: 3%;
@@ -77,8 +73,10 @@ header img {
     transform: scale(1.1);
 }
 
-<<<<<<< Updated upstream
-=======
+.oculto {
+    display: none;
+}
+
 .fade-in{
 animation-name: fade-in;
 animation-duration: 1s;
@@ -91,7 +89,6 @@ animation-duration: 1s;
 /* cAc */
 
 
->>>>>>> Stashed changes
 @media (min-width: 768px) {
 
     #div-nombre,

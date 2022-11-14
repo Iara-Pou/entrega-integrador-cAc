@@ -3,7 +3,6 @@ const $botonEnviar = document.querySelector("#botonEnvio");
 $botonEnviar.onclick= function(){
     const $nombre = document.querySelector("#nombre").value;
     let $mensaje = document.querySelector("#mensaje"); 
-    //seleccionaría el parrafo
 
         if($nombre.trim() !== ""){
             $mensaje.textContent = `¡Gracias por participar, ${$nombre}! En brevedad nos contactaremos.`
@@ -29,9 +28,10 @@ const altoDePantalla = window.innerHeight;
 window.addEventListener('scroll', () =>{
     if(window.scrollY < altoDePantalla/5.5){
         $botonGoTop.classList.add("oculto");
+        $botonGoTop.classList.remove("fade-in")
     } else {
         $botonGoTop.classList.remove("oculto");
-        $botonGoTop.classList.toggle("fade-in");
+        $botonGoTop.classList.add("fade-in");
     }
 }
 );
