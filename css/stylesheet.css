@@ -74,7 +74,7 @@ header img {
 }
 
 .oculto {
-    animation: fade-out 1s;
+    animation: fade-out 500ms;
     opacity: 0;
   }
   
@@ -88,7 +88,7 @@ header img {
   }
 
 .fade-in{
-animation: fade-in 1s;
+animation: fade-in 500ms;
 }
 
 @keyframes fade-in{
