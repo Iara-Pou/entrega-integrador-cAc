@@ -74,8 +74,18 @@ header img {
 }
 
 .oculto {
-    display: none;
-}
+    animation: fade-out 1s;
+    opacity: 0;
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
 
 .fade-in{
 animation-name: fade-in;
