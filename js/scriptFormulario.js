@@ -19,6 +19,7 @@ function verificarInputs(){
     const esExito = contarErrores(errores) === 0;
 
     if (esExito){
+        esconderErrores();
         //mostrar ventana compra
         let $titulo = document.querySelector("h1");
         let $formulario = document.querySelector("form");
@@ -61,10 +62,9 @@ function mostrarErrores(errores){
     );
 }
 
-function mostrarError(error){
+function esconderErrores () {
     const $contenedorErrores = document.querySelector("#contenedor-errores");
-    $contenedorErrores.classList.remove("oculto");
-    $contenedorErrores.textContent = error;
+    $contenedorErrores.classList.add("oculto");
 }
 
 function validarNombreApellido(nombre){
