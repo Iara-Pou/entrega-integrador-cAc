@@ -1,6 +1,7 @@
 const $botonCalcular = document.querySelector("#boton-calcular");
+$botonCalcular.onclick= manejarErrores;
 
-$botonCalcular.onclick= function(){
+function manejarErrores(){
     let $titulo = document.querySelector("h1");
     const $nombre = document.querySelector("#nombre").value;
     const cantidadEntradas = document.querySelector("#cantidad").value;
