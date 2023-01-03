@@ -33,7 +33,7 @@ function verificarInputs(){
         $mensajeFinal.classList.remove("oculto");
 
     } else {
-        manejarErrores(errores);
+        mostrarErrores(errores);
     }
 
 }
@@ -48,18 +48,17 @@ function contarErrores(errores){
     return contador;
 }
 
-function manejarErrores(errores){
+function mostrarErrores(errores){
+    const $contenedorErrores = document.querySelector("#contenedor-errores");
+    $contenedorErrores.classList.remove("oculto");
+    const textoErrores = Object.values(errores);
 
-    console.log(errores);
-
-    // if (cantidadEntradas<=0) {
-    //     alert("¡Debes ingresar 1 o más entradas!")
-    // } else if (categoria===""){
-    //     alert("¡No te olvides de seleccionar una categoría!")
-    // } else {
-    //     alert("Por favor, ingresá todos los datos!")
-    // }
-
+    textoErrores.forEach((error) => {
+        const $contenedorError = document.createElement("p");
+        $contenedorError.textContent = error;
+        $contenedorErrores.appendChild($contenedorError);
+    }
+    );
 }
 
 function mostrarError(error){
