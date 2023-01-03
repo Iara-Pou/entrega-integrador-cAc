@@ -3,7 +3,10 @@ $botonCalcular.onclick= manejarErrores;
 
 function manejarErrores(){
     let $titulo = document.querySelector("h1");
+
     const $nombre = document.querySelector("#nombre").value;
+    const apellido = document.querySelector("#apellido").value;
+    const correo = document.querySelector("#correo").value;
     const cantidadEntradas = document.querySelector("#cantidad").value;
     const categoria = document.querySelector("#categoria").value;
 
