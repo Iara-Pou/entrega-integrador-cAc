@@ -54,3 +54,10 @@ function validarNombreApellido(nombre){
     
     return "";
 }
+
+function validarCorreo(correo){   
+    if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(correo)) {
+        return "El correo no es válido.";
+    }
+    return "";
+}
