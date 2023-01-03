@@ -40,3 +40,17 @@ function mostrarError(error){
     $contenedorErrores.classList.remove("oculto");
     $contenedorErrores.textContent = error;
 }
+
+function validarNombreApellido(nombre){
+    if(nombre.trim() === ""){
+        return "El campo debe contener por lo menos un carácter."
+    }
+    if(!/^[a-zA-Z]+$/.test(nombre)){
+        return "El campo debe contener solo letras."
+    }
+    if(nombre.length > 20){
+        return "El campo debe tener menos de 20 carácteres"
+    }
+    
+    return "";
+}
