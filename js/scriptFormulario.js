@@ -63,11 +63,14 @@ function validarCorreo(correo){
 }
 
 function validarCantidadEntradas(cantidad){
-    if(cantidad<0){
-        return "El campo debe contener un número mayor a 0."
+    if(cantidad<=0){
+        return "El campo debe contener un número mayor a 0.";
     }
     if(cantidad>25){
-        return "No puedes comprar más que 25 entradas."
+        return "No puedes comprar más que 25 entradas.";
+    }
+    return "";
+}
     }
     return "";
 }
