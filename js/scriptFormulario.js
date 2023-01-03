@@ -1,18 +1,27 @@
 const $botonCalcular = document.querySelector("#boton-calcular");
-$botonCalcular.onclick= manejarErrores;
+$botonCalcular.onclick= verificarInputs;
 
-function manejarErrores(){
-    let $titulo = document.querySelector("h1");
-
+function verificarInputs(){
     const nombre = document.querySelector("#nombre").value;
     const apellido = document.querySelector("#apellido").value;
     const correo = document.querySelector("#correo").value;
     const cantidadEntradas = document.querySelector("#cantidad").value;
     const categoria = document.querySelector("#categoria").value;
 
+    const errores = {
+        nombre : validarNombreApellido(nombre),
+        apellido : validarNombreApellido(apellido),
+        correo : validarCorreo(correo),
+        cantidadEntradas : validarCantidadEntradas(cantidadEntradas),
+        categoria: validarCategoria(categoria) 
+    }
+
+    //contar errores
     let esExito = cantidadEntradas>0 && categoria !== "" && nombre !== "";
 
     if (esExito){
+        //mostrar ventana compra
+        let $titulo = document.querySelector("h1");
         let $formulario = document.querySelector("form");
         let $mensajeFinal = document.querySelector("#mensaje-final")
         let $precio = document.querySelector("#precio"); 
@@ -24,15 +33,24 @@ function manejarErrores(){
         $formulario.classList.add("oculto");
         $mensajeFinal.classList.remove("oculto");
 
-    } else if (cantidadEntradas<=0) {
-        alert("¡Debes ingresar 1 o más entradas!")
-    } else if (categoria===""){
-        alert("¡No te olvides de seleccionar una categoría!")
     } else {
-        alert("Por favor, ingresá todos los datos!")
+        manejarErrores(errores);
     }
 
-    return false;
+}
+
+function manejarErrores(errores){
+
+    console.log(errores);
+
+    // if (cantidadEntradas<=0) {
+    //     alert("¡Debes ingresar 1 o más entradas!")
+    // } else if (categoria===""){
+    //     alert("¡No te olvides de seleccionar una categoría!")
+    // } else {
+    //     alert("Por favor, ingresá todos los datos!")
+    // }
+
 }
 
 function mostrarError(error){
