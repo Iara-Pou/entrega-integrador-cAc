@@ -16,8 +16,7 @@ function verificarInputs(){
         categoria: validarCategoria(categoria) 
     }
 
-    //contar errores
-    let esExito = cantidadEntradas>0 && categoria !== "" && nombre !== "";
+    const esExito = contarErrores(errores) === 0;
 
     if (esExito){
         //mostrar ventana compra
@@ -37,6 +36,16 @@ function verificarInputs(){
         manejarErrores(errores);
     }
 
+}
+
+function contarErrores(errores){
+    let contador = 0;
+    Object.values(errores).forEach(
+        error => {if (error !== ""){
+        contador ++;
+    }}
+    );
+    return contador;
 }
 
 function manejarErrores(errores){
