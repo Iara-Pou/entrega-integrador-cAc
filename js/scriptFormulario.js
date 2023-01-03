@@ -4,13 +4,13 @@ $botonCalcular.onclick= manejarErrores;
 function manejarErrores(){
     let $titulo = document.querySelector("h1");
 
-    const $nombre = document.querySelector("#nombre").value;
+    const nombre = document.querySelector("#nombre").value;
     const apellido = document.querySelector("#apellido").value;
     const correo = document.querySelector("#correo").value;
     const cantidadEntradas = document.querySelector("#cantidad").value;
     const categoria = document.querySelector("#categoria").value;
 
-    let esExito = cantidadEntradas>0 && categoria !== "" && $nombre !== "";
+    let esExito = cantidadEntradas>0 && categoria !== "" && nombre !== "";
 
     if (esExito){
         let $formulario = document.querySelector("form");
@@ -18,7 +18,7 @@ function manejarErrores(){
         let $precio = document.querySelector("#precio"); 
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         
-        $titulo.textContent = `¡Gracias por participar, ${$nombre}!`
+        $titulo.textContent = `¡Gracias por participar, ${nombre}!`
         $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
 
         $formulario.classList.add("oculto");
