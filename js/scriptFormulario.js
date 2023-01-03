@@ -71,6 +71,10 @@ function validarCantidadEntradas(cantidad){
     }
     return "";
 }
+
+function validarCategoria(categoria){
+    if(categoria === ""){
+        return "Debes seleccionar una opción.";
     }
     return "";
 }
