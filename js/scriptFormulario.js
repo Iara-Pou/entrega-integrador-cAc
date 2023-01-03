@@ -31,3 +31,8 @@ $botonCalcular.onclick= function(){
     return false;
 }
 
+function mostrarError(error){
+    const $contenedorErrores = document.querySelector("#contenedor-errores");
+    $contenedorErrores.classList.remove("oculto");
+    $contenedorErrores.textContent = error;
+}
