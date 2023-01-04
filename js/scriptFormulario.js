@@ -92,7 +92,7 @@ function esconderMensaje(){
 }
 
 function mostrarCartelConfirmacion(){
-    const $mensajeConfirmacion = document.querySelector("#cartel-confirmacion");
+    const $mensajeConfirmacion = document.querySelector("#confirma-compra");
     $mensajeConfirmacion.classList.remove("oculto");
 }
 
