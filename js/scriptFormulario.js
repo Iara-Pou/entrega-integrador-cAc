@@ -112,6 +112,7 @@ function cancelarCompra(){
 function reiniciarFormulario(){
     mostrarFormulario();
     reiniciarInputs();
+    reiniciarTitulo();
 }
 
 function mostrarFormulario (){
@@ -124,6 +125,11 @@ function reiniciarInputs(){
         input.value = "";
         input.classList.remove("input-error");
     })
+}
+
+function reiniciarTitulo(){
+    let $titulo = document.querySelector("h1");
+    $titulo.textContent = "VALOR DE TICKET $200";
 }
 
 function validarNombreApellido(nombre){
