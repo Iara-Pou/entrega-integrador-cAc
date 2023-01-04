@@ -81,9 +81,10 @@ function esconderFormulario(){
 }
 
 function simularCompra(){
-
+    esconderMensaje();
+    mostrarCartelConfirmacion();
+    redirigirAlIndex();
 }
-
 
 function esconderMensaje(){
     let $mensajeFinal = document.querySelector("#mensaje-final");
