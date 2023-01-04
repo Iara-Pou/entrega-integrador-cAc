@@ -105,6 +105,9 @@ function redirigirAlIndex(){
 }
 
 function cancelarCompra(){
+    esconderMensaje();
+    reiniciarFormulario();
+}
 }
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
