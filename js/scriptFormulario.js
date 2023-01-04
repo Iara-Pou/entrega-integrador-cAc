@@ -90,6 +90,10 @@ function esconderMensaje(){
     $mensajeFinal.classList.add("oculto");
 }
 
+function mostrarCartelConfirmacion(){
+    const $mensajeConfirmacion = document.querySelector("#cartel-confirmacion");
+    $mensajeConfirmacion.classList.remove("oculto");
+}
 
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
