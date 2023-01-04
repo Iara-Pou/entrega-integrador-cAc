@@ -85,6 +85,10 @@ function simularCompra(){
 }
 
 
+function esconderMensaje(){
+    let $mensajeFinal = document.querySelector("#mensaje-final");
+    $mensajeFinal.classList.add("oculto");
+}
 
 
 function validarNombreApellido(nombre){
