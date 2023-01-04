@@ -28,20 +28,20 @@ function verificarInputs(){
     if (esExito){
         esconderErrores();
         esconderFormulario();
-        //mostrar ventana compra
-        let $titulo = document.querySelector("h1");
-        let $mensajeFinal = document.querySelector("#mensaje-final")
-        let $precio = document.querySelector("#precio"); 
-        let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
-        
-        $titulo.textContent = `¡Gracias por participar, ${nombre}!`
-        $precio.textContent = ` $${calcularPrecioEntradas(cantidad, descuento)}`;
-        $mensajeFinal.classList.remove("oculto");
+        mostrarVentanaCompra(nombre,cantidad,categoria);
 
     } else {
         mostrarErrores(errores);
     }
 
+}
+
+function mostrarVentanaCompra(nombreUsuario, cantidadEntradas, categoriaEntradas){
+    let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoriaEntradas));
+
+    document.querySelector("#mensaje-final").classList.remove("oculto");
+    document.querySelector("h1").textContent = `¡Gracias por participar, ${nombreUsuario}!`
+    document.querySelector("#precio").textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
 }
 
 function contarErrores(errores){
