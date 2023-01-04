@@ -1,13 +1,13 @@
 function devolverPorcentajeSegunCategoria(categoria) {
     let porcentaje;
     switch (categoria) {
-        case "Estudiante":
+        case "estudiante":
             porcentaje = 80;
             break;
-        case "Trainee":
+        case "trainee":
             porcentaje = 50;
             break;
-        case "Junior":
+        case "junior":
             porcentaje = 15;
             break;
     }
