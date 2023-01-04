@@ -38,6 +38,14 @@ form button {
     display: none;
 }
 
+.input-error{
+    border: 2px solid red;
+}
+
+.input-correcto{
+    border: 2px solid greenyellow;
+}
+
 @media (min-width: 768px) {
     form {
         padding: 0 10%;
