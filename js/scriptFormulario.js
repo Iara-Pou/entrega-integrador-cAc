@@ -1,7 +1,9 @@
 const $botonCalcular = document.querySelector("#boton-calcular");
 const $formulario = document.querySelector("form");
+const $botonCompra = document.querySelector("#boton-confirmar-compra");
 
 $botonCalcular.onclick= verificarInputs;
+$botonCompra.onclick = simularCompra;
 
 function verificarInputs(){
     const nombre = document.querySelector("#nombre").value;
@@ -77,6 +79,13 @@ function esconderErrores () {
 function esconderFormulario(){
     $formulario.classList.add("oculto");
 }
+
+function simularCompra(){
+
+}
+
+
+
 
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
