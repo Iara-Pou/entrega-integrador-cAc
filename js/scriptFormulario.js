@@ -95,6 +95,11 @@ function mostrarCartelConfirmacion(){
     $mensajeConfirmacion.classList.remove("oculto");
 }
 
+function redirigirAlIndex(){
+    setTimeout(()=> window.location.href = "index.html" ,
+    3000)
+}
+
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
         return "El campo debe contener por lo menos un carácter."
