@@ -113,7 +113,19 @@ function reiniciarFormulario(){
     mostrarFormulario();
     reiniciarInputs();
 }
+
+function mostrarFormulario (){
+    $formulario.classList.remove("oculto");
 }
+
+function reiniciarInputs(){
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach(input =>{
+        input.value = "";
+        input.classList.remove("input-error");
+    })
+}
+
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
         return "El campo debe contener por lo menos un carácter."
