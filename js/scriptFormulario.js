@@ -121,10 +121,13 @@ function mostrarFormulario (){
 
 function reiniciarInputs(){
     const inputs = document.querySelectorAll("input");
+    const $opcionDefaultSelect = document.querySelector("#opcion-default");
+
     inputs.forEach(input =>{
         input.value = "";
         input.classList.remove("input-error");
-    })
+    });
+    $opcionDefaultSelect.selected = true;
 }
 
 function reiniciarTitulo(){
