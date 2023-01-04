@@ -63,7 +63,7 @@ function mostrarErrores(errores){
             $formulario[error].classList.add("input-error");
 
         } else {
-            $formulario[error].classList.add("input-correcto");
+            $formulario[error].classList.remove("input-error");
         }
     }
     );
