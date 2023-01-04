@@ -1,9 +1,12 @@
 const $botonCalcular = document.querySelector("#boton-calcular");
 const $formulario = document.querySelector("form");
 const $botonCompra = document.querySelector("#boton-confirmar-compra");
+const $botonCancelarCompra = document.querySelector("#boton-cancelar-compra");
+
 
 $botonCalcular.onclick= verificarInputs;
 $botonCompra.onclick = simularCompra;
+$botonCancelarCompra.onclick = cancelarCompra;
 
 function verificarInputs(){
     const nombre = document.querySelector("#nombre").value;
@@ -101,6 +104,8 @@ function redirigirAlIndex(){
     3000)
 }
 
+function cancelarCompra(){
+}
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
         return "El campo debe contener por lo menos un carácter."
