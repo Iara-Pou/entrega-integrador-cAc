@@ -108,6 +108,11 @@ function cancelarCompra(){
     esconderMensaje();
     reiniciarFormulario();
 }
+
+function reiniciarFormulario(){
+    mostrarFormulario();
+    reiniciarInputs();
+}
 }
 function validarNombreApellido(nombre){
     if(nombre.trim() === ""){
