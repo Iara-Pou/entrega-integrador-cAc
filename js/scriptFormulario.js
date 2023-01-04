@@ -1,4 +1,6 @@
 const $botonCalcular = document.querySelector("#boton-calcular");
+const $formulario = document.querySelector("form");
+
 $botonCalcular.onclick= verificarInputs;
 
 function verificarInputs(){
@@ -52,12 +54,19 @@ function contarErrores(errores){
 function mostrarErrores(errores){
     const $contenedorErrores = document.querySelector("#contenedor-errores");
     $contenedorErrores.classList.remove("oculto");
-    const textoErrores = Object.values(errores);
+    const textoErrores = Object.keys(errores);
 
     textoErrores.forEach((error) => {
-        const $contenedorError = document.createElement("p");
-        $contenedorError.textContent = error;
-        $contenedorErrores.appendChild($contenedorError);
+        if(errores[error] != ""){
+            const $contenedorError = document.createElement("p");
+            $contenedorError.textContent = errores[error];
+            $contenedorErrores.appendChild($contenedorError);
+            
+            $formulario[error].classList.add("input-error");
+
+        } else {
+            $formulario[error].classList.add("input-correcto");
+        }
     }
     );
 }
