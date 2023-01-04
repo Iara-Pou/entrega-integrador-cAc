@@ -30,7 +30,7 @@ function verificarInputs(){
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         
         $titulo.textContent = `¡Gracias por participar, ${nombre}!`
-        $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
+        $precio.textContent = ` $${calcularPrecioEntradas(cantidad, descuento)}`;
         $mensajeFinal.classList.remove("oculto");
 
     } else {
