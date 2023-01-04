@@ -29,6 +29,7 @@ function verificarInputs() {
         esconderFormulario();
         mostrarVentanaCompra(nombre, cantidad, categoria);
     } else {
+        borrarErroresAnteriores();
         mostrarErrores(errores);
     }
 
@@ -72,6 +73,11 @@ function mostrarErrores(errores) {
         }
     }
     );
+}
+
+function borrarErroresAnteriores(){
+    const $errores = document.querySelectorAll("#contenedor-errores p");
+    $errores.forEach( error => error.remove())
 }
 
 function esconderErrores() {
