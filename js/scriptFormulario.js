@@ -4,16 +4,16 @@ $botonCalcular.onclick= verificarInputs;
 function verificarInputs(){
     const nombre = document.querySelector("#nombre").value;
     const apellido = document.querySelector("#apellido").value;
-    const correo = document.querySelector("#correo").value;
-    const cantidadEntradas = document.querySelector("#cantidad").value;
+    const mail = document.querySelector("#correo").value;
+    const cantidad = document.querySelector("#cantidad").value;
     const categoria = document.querySelector("#categoria").value;
 
     const errores = {
         nombre : validarNombreApellido(nombre),
         apellido : validarNombreApellido(apellido),
-        correo : validarCorreo(correo),
-        cantidadEntradas : validarCantidadEntradas(cantidadEntradas),
-        categoria: validarCategoria(categoria) 
+        mail : validarCorreo(mail),
+        cantidad : validarCantidadEntradas(cantidad),
+        "categoria-entrada" : validarCategoria(categoria) 
     }
 
     const esExito = contarErrores(errores) === 0;
