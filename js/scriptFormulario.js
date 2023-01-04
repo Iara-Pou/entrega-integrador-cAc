@@ -22,17 +22,15 @@ function verificarInputs(){
 
     if (esExito){
         esconderErrores();
+        esconderFormulario();
         //mostrar ventana compra
         let $titulo = document.querySelector("h1");
-        let $formulario = document.querySelector("form");
         let $mensajeFinal = document.querySelector("#mensaje-final")
         let $precio = document.querySelector("#precio"); 
         let descuento = calcularPorcentajeDescuento(devolverPorcentajeSegunCategoria(categoria));
         
         $titulo.textContent = `¡Gracias por participar, ${nombre}!`
         $precio.textContent = ` $${calcularPrecioEntradas(cantidadEntradas, descuento)}`;
-
-        $formulario.classList.add("oculto");
         $mensajeFinal.classList.remove("oculto");
 
     } else {
@@ -61,7 +59,7 @@ function mostrarErrores(errores){
             const $contenedorError = document.createElement("p");
             $contenedorError.textContent = errores[error];
             $contenedorErrores.appendChild($contenedorError);
-            
+
             $formulario[error].classList.add("input-error");
 
         } else {
@@ -74,6 +72,10 @@ function mostrarErrores(errores){
 function esconderErrores () {
     const $contenedorErrores = document.querySelector("#contenedor-errores");
     $contenedorErrores.classList.add("oculto");
+}
+
+function esconderFormulario(){
+    $formulario.classList.add("oculto");
 }
 
 function validarNombreApellido(nombre){
