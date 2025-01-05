@@ -1,11 +1,14 @@
+/* Fuente global */
 * {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/* Estilos del pie de página */
 footer {
   background-color: rgb(16, 72, 105);
 }
 
+/* Estilos para el bloque de texto con fecha y lugar */
 #textoFechaYLugar {
   background-color: rgb(75, 75, 75);
   color: white;
@@ -13,6 +16,7 @@ footer {
   height: 500px;
 }
 
+/* Estilos para el enlace de comprar tickets */
 #comprarTickets {
   color: rgb(0, 185, 0);
 }
@@ -25,6 +29,7 @@ p > a {
   text-decoration-style: dotted;
 }
 
+/* Estilos del carousel */
 .carousel-descripcion {
   position: absolute;
   right: 0;
@@ -37,28 +42,43 @@ p > a {
 
 header img {
   filter: brightness(35%);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
+/* Estilos para el carousel en pantallas grandes */
 @media (min-width: 1800px) {
   header img {
     height: 60vh;
-    width: 100%;
     max-height: none;
-    object-fit: cover;
   }
 }
 
+/* Estilos para el contenedor de fotos en el carousel */
 .foto-carousel {
   height: 500px;
   width: 100%;
   background-size: cover !important;
 }
 
+/* Estilos generales para los divs de nombre y apellido */
 #div-nombre,
 #div-apellido {
   padding: 2% 0%;
 }
 
+#div-nombre {
+  padding-left: 0%;
+  padding-right: 1%;
+}
+
+#div-apellido {
+  padding-right: 0%;
+  padding-left: 1%;
+}
+
+/* Estilos para el botón de ir arriba */
 #go-top-container {
   position: fixed;
   bottom: 3%;
@@ -81,6 +101,7 @@ header img {
   transform: scale(1.1);
 }
 
+/* Animación para ocultar elementos */
 .oculto {
   animation: fade-out 500ms;
   opacity: 0;
@@ -95,6 +116,7 @@ header img {
   }
 }
 
+/* Animación para mostrar elementos */
 .fade-in {
   animation: fade-in 500ms;
 }
@@ -107,25 +129,24 @@ header img {
     opacity: 100%;
   }
 }
-/* cAc */
 
+/* Estilos para pantallas medianas (tablets y dispositivos similares) */
 @media (min-width: 768px) {
   #div-nombre,
   #div-apellido {
     padding: 1% 0% 0%;
   }
-
   #div-nombre {
     padding-left: 0%;
     padding-right: 1%;
   }
-
   #div-apellido {
     padding-right: 0%;
     padding-left: 1%;
   }
 }
 
+/* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   #textoFechaYLugar {
     height: auto;
