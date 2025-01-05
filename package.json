@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Iara-Pou/entrega-integrador-cAc#readme",
   "dependencies": {
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.3.3"
   }
 }
