@@ -1,53 +1,63 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
 h3,
 .porcentaje {
-    font-weight: bolder;
-    font-size: 1.5rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 .recuadro {
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5%;
 }
 
 .recuadro:hover {
-    transform: scale(1.02);
-    background-color: rgb(250, 250, 250);
+  transform: scale(1.02);
+  background-color: rgb(250, 250, 250);
 }
 
 .aclaracion {
-    color: gray;
-    font-size: 0.9rem;
+  color: gray;
+  font-size: 0.9rem;
 }
 
 input,
 select {
-    margin: 1% auto;
+  margin: 1% auto;
 }
 
 #cartel {
-    width: 98%;
-    margin: 0 auto;
+  width: 98%;
+  margin: 0 auto;
 }
 
 form button {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
-.oculto{
-    display: none;
+.oculto {
+  display: none;
 }
 
-.input-error{
-    border: 2px solid red;
+.input-error {
+  border: 2px solid red;
 }
 
 @media (min-width: 768px) {
-    form {
-        padding: 0 10%;
-    }
+  form {
+    padding: 0 10%;
+  }
 
-    form button {
-        margin-bottom: 0%;
-    }
+  form button {
+    margin-bottom: 0%;
+  }
 }
