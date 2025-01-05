@@ -1,44 +1,51 @@
 * {
-    font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 footer {
-    background-color: rgb(16, 72, 105);
+  background-color: rgb(16, 72, 105);
 }
 
 #textoFechaYLugar {
-    background-color: rgb(75, 75, 75);
-    color: white;
-    padding: 1.5%;
-    height: 500px;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  padding: 1.5%;
+  height: 500px;
 }
 
-
 #comprarTickets {
-    color: rgb(0, 185, 0);
+  color: rgb(0, 185, 0);
 }
 
 #comprarTickets:hover {
-    color: rgb(3, 216, 3);
-
+  color: rgb(3, 216, 3);
 }
 
-p>a {
-    text-decoration-style: dotted;
+p > a {
+  text-decoration-style: dotted;
 }
 
 .carousel-descripcion {
-    position: absolute;
-    right: 0;
-    padding-top: 17%;
-    padding-right: 8%;
-    padding-left: 8%;
-    color: #fff;
-    text-align: right;
+  position: absolute;
+  right: 0;
+  padding-top: 17%;
+  padding-right: 8%;
+  padding-left: 8%;
+  color: #fff;
+  text-align: right;
 }
 
 header img {
-    filter: brightness(35%);
+  filter: brightness(35%);
+}
+
+@media (min-width: 1800px) {
+  header img {
+    height: 60vh;
+    width: 100%;
+    max-height: none;
+    object-fit: cover;
+  }
 }
 
 .foto-carousel {
@@ -49,52 +56,56 @@ header img {
 
 #div-nombre,
 #div-apellido {
-    padding: 2% 0%;
+  padding: 2% 0%;
 }
 
 #go-top-container {
-    position: fixed;
-    bottom: 3%;
-    right: 3%;
-    width: 6rem;
-    height: 6rem;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 6rem;
+  height: 6rem;
 }
 
 #go-top-button {
-    background-color: rgba(255, 255, 255, 0.849);
-    border: 1.5px solid gray;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.849);
+  border: 1.5px solid gray;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-#go-top-button:active{
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.1);
+#go-top-button:active {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.1);
 }
 
 .oculto {
-    animation: fade-out 500ms;
-    opacity: 0;
-  }
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 100%;
-    }
-    100% {
-      opacity: 0%;
-    }
-  }
-
-.fade-in{
-animation: fade-in 500ms;
+  animation: fade-out 500ms;
+  opacity: 0;
 }
 
-@keyframes fade-in{
-0%{ opacity: 0%;}
-100%{ opacity: 100%;}
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.fade-in {
+  animation: fade-in 500ms;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 /* cAc */
 
