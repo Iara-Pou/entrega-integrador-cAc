@@ -42,8 +42,9 @@ header img {
 }
 
 .foto-carousel {
-    height: 500px;
-    background-size: cover !important;
+  height: 500px;
+  width: 100%;
+  background-size: cover !important;
 }
 
 #div-nombre,
