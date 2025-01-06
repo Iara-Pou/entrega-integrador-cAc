@@ -1,0 +1,155 @@
+/* Fuente global */
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: rgb(16, 72, 105);
+}
+
+/* Estilos para el bloque de texto con fecha y lugar */
+#textoFechaYLugar {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  padding: 1.5%;
+  height: 500px;
+}
+
+/* Estilos para el enlace de comprar tickets */
+#comprarTickets {
+  color: rgb(0, 185, 0);
+}
+
+#comprarTickets:hover {
+  color: rgb(3, 216, 3);
+}
+
+p > a {
+  text-decoration-style: dotted;
+}
+
+/* Estilos del carousel */
+.carousel-descripcion {
+  position: absolute;
+  right: 0;
+  padding-top: 17%;
+  padding-right: 8%;
+  padding-left: 8%;
+  color: #fff;
+  text-align: right;
+}
+
+header img {
+  filter: brightness(35%);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el carousel en pantallas grandes */
+@media (min-width: 1800px) {
+  header img {
+    height: 60vh;
+    max-height: none;
+  }
+}
+
+/* Estilos para el contenedor de fotos en el carousel */
+.foto-carousel {
+  height: 500px;
+  width: 100%;
+  background-size: cover !important;
+}
+
+/* Estilos generales para los divs de nombre y apellido */
+#div-nombre,
+#div-apellido {
+  padding: 2% 0%;
+}
+
+#div-nombre {
+  padding-left: 0%;
+  padding-right: 1%;
+}
+
+#div-apellido {
+  padding-right: 0%;
+  padding-left: 1%;
+}
+
+/* Estilos para el botón de ir arriba */
+#go-top-container {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 6rem;
+  height: 6rem;
+}
+
+#go-top-button {
+  background-color: rgba(255, 255, 255, 0.849);
+  border: 1.5px solid gray;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#go-top-button:active {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+/* Animación para ocultar elementos */
+.oculto {
+  animation: fade-out 500ms;
+  opacity: 0;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* Animación para mostrar elementos */
+.fade-in {
+  animation: fade-in 500ms;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* Estilos para pantallas medianas (tablets y dispositivos similares) */
+@media (min-width: 768px) {
+  #div-nombre,
+  #div-apellido {
+    padding: 1% 0% 0%;
+  }
+  #div-nombre {
+    padding-left: 0%;
+    padding-right: 1%;
+  }
+  #div-apellido {
+    padding-right: 0%;
+    padding-left: 1%;
+  }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  #textoFechaYLugar {
+    height: auto;
+    padding: 2rem;
+  }
+}

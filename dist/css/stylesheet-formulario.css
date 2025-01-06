@@ -1,0 +1,77 @@
+/* Estilos para el contenedor principal */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+/* Estilos para el pie de página */
+footer {
+  margin-top: auto;
+}
+
+/* Estilos para títulos h3 y clase porcentaje */
+h3,
+.porcentaje {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+/* Estilos para el recuadro */
+.recuadro {
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5%;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    border-radius 0.3s ease;
+}
+
+.recuadro:hover {
+  transform: scale(1.05);
+  background-color: rgb(250, 250, 250);
+}
+
+/* Estilos para aclaración */
+.aclaracion {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* Estilos para inputs y selects */
+input,
+select {
+  margin: 1% auto;
+}
+
+/* Estilos para el cartel */
+#cartel {
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* Estilos para botones dentro de formularios */
+form button {
+  margin-bottom: 2%;
+}
+
+/* Estilos para ocultar elementos */
+.oculto {
+  display: none;
+}
+
+/* Estilos para inputs con error */
+.input-error {
+  border: 2px solid red;
+}
+
+/* Estilos para pantallas medianas (tablets y dispositivos similares) */
+@media (min-width: 768px) {
+  form {
+    padding: 0 10%;
+  }
+
+  form button {
+    margin-bottom: 0%;
+  }
+}
