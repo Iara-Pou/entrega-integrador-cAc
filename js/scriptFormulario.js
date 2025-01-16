@@ -1,4 +1,5 @@
 const $botonCalcular = document.querySelector("#boton-calcular");
+const $botonReiniciar = document.querySelector("#boton-borrar");
 const $formulario = document.querySelector("form");
 const $botonCompra = document.querySelector("#boton-confirmar-compra");
 const $botonCancelarCompra = document.querySelector("#boton-cancelar-compra");
@@ -6,6 +7,7 @@ const $botonCancelarCompra = document.querySelector("#boton-cancelar-compra");
 $botonCalcular.onclick = verificarInputs;
 $botonCompra.onclick = simularCompra;
 $botonCancelarCompra.onclick = cancelarCompra;
+$botonReiniciar.onclick = reiniciarFormulario;
 
 function verificarInputs() {
     const nombre = document.querySelector("#nombre").value;
