@@ -5,7 +5,7 @@ const $botonCompra = document.querySelector("#boton-confirmar-compra");
 const $botonCancelarCompra = document.querySelector("#boton-cancelar-compra");
 
 $botonCalcular.onclick = verificarInputs;
-$botonCompra.onclick = simularCompra;
+$botonCompra.onclick = enviarSolicitud;
 $botonCancelarCompra.onclick = cancelarCompra;
 $botonReiniciar.onclick = reiniciarFormulario;
 
@@ -105,7 +105,7 @@ function esconderFormulario() {
   $formulario.classList.add("oculto");
 }
 
-function simularCompra() {
+function enviarSolicitud() {
   esconderMensajeCompra();
   mostrarCartelConfirmacion();
   redirigirAlIndex();

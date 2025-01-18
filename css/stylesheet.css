@@ -68,16 +68,6 @@ header img {
   padding: 2% 0%;
 }
 
-#div-nombre {
-  padding-left: 0%;
-  padding-right: 1%;
-}
-
-#div-apellido {
-  padding-right: 0%;
-  padding-left: 1%;
-}
-
 /* Estilos para el botón de ir arriba */
 #go-top-container {
   position: fixed;
@@ -127,22 +117,6 @@ header img {
   }
   100% {
     opacity: 100%;
-  }
-}
-
-/* Estilos para pantallas medianas (tablets y dispositivos similares) */
-@media (min-width: 768px) {
-  #div-nombre,
-  #div-apellido {
-    padding: 1% 0% 0%;
-  }
-  #div-nombre {
-    padding-left: 0%;
-    padding-right: 1%;
-  }
-  #div-apellido {
-    padding-right: 0%;
-    padding-left: 1%;
   }
 }
 
