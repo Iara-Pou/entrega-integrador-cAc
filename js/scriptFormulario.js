@@ -12,9 +12,9 @@ $botonReiniciar.onclick = reiniciarFormulario;
 function verificarInputs() {
   const $inputNombre = document.querySelector("#nombre");
   const $inputApellido = document.querySelector("#apellido");
-  const $inputMail = document.querySelector("#correo");
+  const $inputMail = document.querySelector("#mail");
   const $inputCantidad = document.querySelector("#cantidad");
-  const $inputCategoria = document.querySelector("#categoria");
+  const $inputCategoria = document.querySelector("#categoria-entrada");
 
   //almaceno el input y su error
   const inputErrores = {
@@ -75,16 +75,20 @@ function contarErrores(errores) {
 }
 
 function mostrarErrores(errores) {
-  Object.values(errores).forEach((error) => {
+  const KEYS_INPUTS = Object.keys(errores);
+
+  Object.values(errores).forEach((error, index) => {
     if (error[1] !== "") {
       //modifica input con error
       error[0].classList.add("input-error");
+      error[0].id = KEYS_INPUTS[index];
 
       //maneja texto con error
       const TEXTO_ERROR = error[1];
       let $labelError = document.createElement("label");
       $labelError.textContent = TEXTO_ERROR;
       $labelError.classList.add("error");
+      $labelError.setAttribute("for", KEYS_INPUTS[index]);
       error[0].insertAdjacentElement("afterend", $labelError);
     }
   });

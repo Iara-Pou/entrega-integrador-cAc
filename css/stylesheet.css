@@ -104,7 +104,7 @@ header img {
 /* Animación para ocultar elementos */
 .oculto {
   animation: fade-out 500ms;
-  opacity: 0;
+  display: hidden;
 }
 
 @keyframes fade-out {
