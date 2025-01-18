@@ -48,20 +48,15 @@ function contarErrores(errores) {
 }
 
 function mostrarErrores(errores) {
-  const KEYS_INPUTS = Object.keys(errores);
-
-  Object.values(errores).forEach((error, index) => {
+  Object.values(errores).forEach((error) => {
     if (error[1] !== "") {
       //modifica input con error
       error[0].classList.add("input-error");
-      error[0].id = KEYS_INPUTS[index];
-
       //maneja texto con error
       const TEXTO_ERROR = error[1];
       let $labelError = document.createElement("label");
       $labelError.textContent = TEXTO_ERROR;
       $labelError.classList.add("error");
-      $labelError.setAttribute("for", KEYS_INPUTS[index]);
       error[0].insertAdjacentElement("afterend", $labelError);
     }
   });

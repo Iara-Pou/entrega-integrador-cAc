@@ -127,3 +127,18 @@ header img {
     padding: 2rem;
   }
 }
+
+@media (min-width: 768px) {
+  #div-nombre,
+  #div-apellido {
+    padding: 1% 0% 0%;
+  }
+  #div-nombre {
+    padding-left: 0%;
+    padding-right: 1%;
+  }
+  #div-apellido {
+    padding-right: 0%;
+    padding-left: 1%;
+  }
+}
