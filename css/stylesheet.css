@@ -97,31 +97,7 @@ header img {
 
 /* Animación para ocultar elementos */
 .oculto {
-  animation: fade-out 500ms;
   display: hidden;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-/* Animación para mostrar elementos */
-.fade-in {
-  animation: fade-in 500ms;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
 }
 
 /* Estilos para pantallas pequeñas (móviles) */
