@@ -63,6 +63,13 @@ form button {
 /* Estilos para inputs con error */
 .input-error {
   border: 2px solid red;
+  margin-bottom: -0.2em;
+}
+
+.error {
+  font-size: 0.8em;
+  color: red;
+  --bs-gutter-x: 0 !important;
 }
 
 /* Estilos para pantallas medianas (tablets y dispositivos similares) */

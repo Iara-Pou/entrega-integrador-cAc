@@ -91,7 +91,7 @@
                                         id="apellido" placeholder="Apellido"></div>
                             </div>
                             <div class="row">
-                                <div class="col-12"><input type="email" name="mail" class="form-control" id="correo"
+                                <div class="col-12"><input type="email" name="mail" class="form-control" id="mail"
                                         placeholder="Correo"></div>
                             </div>
                             <div class="row">
@@ -101,8 +101,8 @@
                                         placeholder="Cantidad">
                                 </div>
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label for="categoria">Categoría</label>
-                                    <select name="categoria-entrada" class="form-control" id="categoria">
+                                    <label for="categoria-entrada">Categoría</label>
+                                    <select name="categoria-entrada" class="form-control" id="categoria-entrada">
                                         <option value="" id="opcion-default">Seleccionar</option>
                                         <option value="estudiante">Estudiante</option>
                                         <option value="trainee">Trainee</option>
@@ -111,14 +111,13 @@
                                 </div>
                             </div>
                             <div class="row py-4">
-                                <div class="col-md-6 col-sm-12"> <button type="reset"
-                                        class="btn btn-success w-100">Borrar</button></div>
+                                <div class="col-md-6 col-sm-12"> <button type="reset" class="btn btn-success w-100"
+                                        id="boton-borrar">Borrar</button></div>
                                 <div class="col-md-6 col-sm-12"> <button type="button" class="btn btn-success w-100"
                                         id="boton-calcular">Resumen</button></div>
                             </div>
                         </div>
                     </form>
-                    <div class="alert alert-danger oculto" role="alert" id="contenedor-errores"></div>
                     <div class="row oculto" id="mensaje-final">
                         <div class="alert alert-primary my-4 col-10" id="cartel">
                             <p class="text-center">Total a pagar: <em id="precio"></em></p>

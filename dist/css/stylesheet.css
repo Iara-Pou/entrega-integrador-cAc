@@ -68,16 +68,6 @@ header img {
   padding: 2% 0%;
 }
 
-#div-nombre {
-  padding-left: 0%;
-  padding-right: 1%;
-}
-
-#div-apellido {
-  padding-right: 0%;
-  padding-left: 1%;
-}
-
 /* Estilos para el botón de ir arriba */
 #go-top-container {
   position: fixed;
@@ -101,36 +91,23 @@ header img {
   transform: scale(1.1);
 }
 
+#temaCharla {
+  margin-bottom: 0;
+}
+
 /* Animación para ocultar elementos */
 .oculto {
-  animation: fade-out 500ms;
-  opacity: 0;
+  display: hidden;
 }
 
-@keyframes fade-out {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  #textoFechaYLugar {
+    height: auto;
+    padding: 2rem;
   }
 }
 
-/* Animación para mostrar elementos */
-.fade-in {
-  animation: fade-in 500ms;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-/* Estilos para pantallas medianas (tablets y dispositivos similares) */
 @media (min-width: 768px) {
   #div-nombre,
   #div-apellido {
@@ -143,13 +120,5 @@ header img {
   #div-apellido {
     padding-right: 0%;
     padding-left: 1%;
-  }
-}
-
-/* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  #textoFechaYLugar {
-    height: auto;
-    padding: 2rem;
   }
 }
